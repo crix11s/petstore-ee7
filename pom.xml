@@ -9,6 +9,17 @@
   <packaging>war</packaging>
   <name>Petstore application using Java EE 7</name>
 
+     <!-- PrimeFaces Repository -->
+    <repositories>
+        
+   <repository>  
+    <id>prime-repo</id>  
+    <name>PrimeFaces Maven Repository</name>  
+    <url>http://repository.primefaces.org</url>  
+    <layout>default</layout>  
+  </repository>  
+  </repositories>
+
   <properties>
     <version.javaee>7.0</version.javaee>
     <version.jboss-javaee>1.1.0.Final</version.jboss-javaee>
@@ -121,9 +132,9 @@
       <version>1.9.13</version>
     </dependency>
     <dependency>
-      <groupId>org.primefaces.extensions</groupId>
+    <groupId>org.primefaces.themes</groupId>
       <artifactId>all-themes</artifactId>
-      <version>1.0.8</version>
+      <version>1.0.10</version>
     </dependency>
     <dependency>
       <groupId>io.swagger</groupId>
@@ -338,6 +349,7 @@
   </profile>
 
   </profiles>
+
 
 
 <distributionManagement>
